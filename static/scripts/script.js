@@ -24,5 +24,5 @@ function oneMoreLike() {
 	var id = $(this).find('.hidden-id').html();
 	$.ajax({
 		url: '/like/' + id
-	})
+	}).done();
 }
