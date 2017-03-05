@@ -20,15 +20,27 @@
 		  <input name="id" />
 		  <input type="submit" value="Submit" />
 		</form>
-
 		<a href="/posts">Post List</a>
 
 		<h2>Posts:</h2>
-
 		<ul id="post-list">
-			
 		</ul>
 
+		<script id="post-template" type="text/post-template">
+			<li>
+				<h2 class="title"></h2>
+				<h4 class="author"></h4>
+				<p class="body"></p>
+				Likes:<bold class="likes"></bold>
+				<br>
+				<button class="like-button"><span class="hidden-id"></span>Like</button>
+			</li>
+		</script>
+
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.js"
+		  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+		  crossorigin="anonymous"></script>
 		<script src="/static/scripts/script.js"></script>
 	</body>
 </html>
